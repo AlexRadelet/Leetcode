@@ -1,0 +1,26 @@
+# --- Environnements Virtuels ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- IDEs (PyCharm / VS Code) ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Cache Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# --- Système d'exploitation ---
+.DS_Store
+Thumbs.db
