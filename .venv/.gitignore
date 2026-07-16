@@ -1,15 +1,14 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
+
+# Python cache
+__pycache__/
+*.pyc
 
 # PyCharm
 .idea/
 
 # OS
 .DS_Store
-Thumbs.db*
+Thumbs.db
