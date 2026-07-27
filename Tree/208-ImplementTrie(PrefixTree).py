@@ -20,6 +20,7 @@ class Trie:
                 return False
             d = d[c]
 
+        # True if we have the particular word
         return '.' in d
 
     def startsWith(self, prefix: str) -> bool:
