@@ -1,0 +1,26 @@
+from typing import List
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        ans, sol = [], []
+
+        def backtrack(openn, close):
+            if len(sol) == 2*n:
+                ans.append("".join(sol))
+                return
+            #use an open bracket
+            if openn <n:
+                sol.append('(')
+                backtrack(openn+1, close)
+                sol.pop()
+
+            #use a close bracket
+            if openn > close :
+                sol.append(')')
+                backtrack(openn,close+1)
+                sol.pop()
+
+        backtrack(0, 0)
+        return ans
+
+# Time : O(2**n)
+# Space : O(2*n) - O(n)
