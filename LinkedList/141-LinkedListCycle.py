@@ -20,7 +20,7 @@ class Solution:
         return False
 
 # Time : O(n)
-# Space : O(1) ( Hashmap will be O(n))
+# Space : O(n) ( Hashmap will be O(n))
 
 
 
